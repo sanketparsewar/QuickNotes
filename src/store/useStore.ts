@@ -17,7 +17,7 @@ const useStore = create<Store>()(
         set((state) => ({
           notes: [...state.notes, note],
         })),
-      removeNote: (id) =>
+      removeNote: (id:number) =>
         set((state) => ({
           notes: state.notes.filter((n) => n.id !== id),
         })),
